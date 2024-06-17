@@ -1,10 +1,11 @@
 #include<stdio.h>
-int main(void)
-
-/*
-*Main fonction
-*Programming is like building a multilingual puzzle
+/**
+* main - Prints "Programming is like building a multilingual
+*                puzzle followed by a new line.
+*
+* Return: Always 0.
 */
+int main(void)
 
 {
 	char str[55] = "\"Programming is like building a multilingual puzzle";
