@@ -1,10 +1,11 @@
 #include<stdio.h>
+
 /**
- * main - "prints the size of various types
+ * main - prints the size of various types
  *	on the computer it is compiled
- *
- * Retourn: 0
- */
+ * Return: Always 0
+*/
+
 int main(void)
 {
 	char charType;
