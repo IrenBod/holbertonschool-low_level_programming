@@ -2,7 +2,7 @@
 int main(void)
 
 /*
-*Main fonction  
+*Main fonction
 *Programming is like building a multilingual puzzle
 */
 
