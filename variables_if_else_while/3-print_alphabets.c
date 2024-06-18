@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+* main - Printf " a program that prints the alphabet * 2
+*
+* Return: 0.
+*/
+
 int main(void)
 {
 int i;
