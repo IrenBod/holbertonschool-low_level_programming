@@ -2,6 +2,7 @@
 
 /**
  * main - print 4. When I was having that alphabet soup
+ * Return: 0
 */
 
 int main(void)
