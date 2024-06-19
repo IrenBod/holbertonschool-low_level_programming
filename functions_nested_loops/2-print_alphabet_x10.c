@@ -15,9 +15,7 @@ int i;
 		{
 			_putchar(i);
 		}
-		
 		_putchar('\n');
-	
 	}
 
 }
