@@ -13,6 +13,11 @@ int res;
 b = 10;
 res = a % b;
 
+if (res < 0)
+{
+	res = -res;
+}
+
 _putchar(res + '0');
 return (res);
 }
