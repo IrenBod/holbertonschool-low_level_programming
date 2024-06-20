@@ -13,6 +13,6 @@ int res;
 b = 10;
 res = a % b;
 
-_putchar(48 + res);
-return (48 + res);
+_putchar(res + '0');
+return (res + '0');
 }
