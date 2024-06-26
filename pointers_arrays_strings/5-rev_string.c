@@ -11,7 +11,11 @@ void rev_string(char *s)
 {
 	int i, j, size, tmp;
 
-	size = 10;
+	size = 0;
+
+	while (s[size] != '\0')
+		size++;
+
 	for (i = 0, j = size - 1; i < j; i++, j--)
 	{
 		tmp = s[i];
