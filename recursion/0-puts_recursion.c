@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* _isupper - Write a function that checks for uppercase character.
-* @c: int
+* _puts_recursion - a function that prints a string, followed by a new line.
+* @s: char
 *Return: 0
 */
 
