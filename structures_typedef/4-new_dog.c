@@ -3,6 +3,37 @@
 #include <stdlib.h>
 
 /**
+ * _strdup - duplicates a string
+ * @str: the string to duplicate
+ * Return: pointer to the duplicated string,
+ * or NULL if insufficient memory was available
+ */
+
+
+
+char *_strdup(char *str)
+{
+	int size = 0;
+	int i;
+	char *arr;
+
+	if (str == 0)
+		return (NULL);
+	while (str[size] != '\0')
+	{
+		size++;
+	}
+	arr = malloc((size + 1) * sizeof(char));
+	if (arr == NULL)
+		return (NULL);
+	for (i = 0; i <= size; i++)
+	{
+		arr[i] = str[i];
+	}
+	return (arr);
+}
+
+/**
  * new_dog - Creates a new dog structure and initializes its fields
  * @name: Pointer to a string containing the name of the dog
  * @age: Age of the dog
@@ -23,7 +54,6 @@
  * - If memory allocation for name_copy or owner_copy fails, the function
  *   frees any already allocated memory and returns NULL.
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
