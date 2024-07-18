@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error1\n");
+		printf("Error\n");
 			exit(98);
 	}
 
@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 	strcmp(argv[2], "*") != 0 &&
 	strcmp(argv[2], "/") != 0 && strcmp(argv[2], "%") != 0)
 	{
-		printf("Error2\n");
+		printf("Error\n");
 		exit(99);
 	}
 	result = get_op_func(argv[2])(num1, num2);
