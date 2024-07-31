@@ -15,26 +15,25 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *newNode = malloc(sizeof(list_t));
-		if (newNode == NULL)
-		{
-			return (NULL);
-		}
-		newNode->str = strdup(str);
-		if (newNode->str == NULL)
-		{
-			free(newNode);
-			return (NULL);
-		}
+	list_t *newNode;
 
-		newNode->len = 0;
-		while (str[newNode->len])
-		{
-			newNode->len++;
-		}
-
-		newNode->next = *head;
-		*head = newNode;
-
-		return (newNode);
+	newNode = malloc(sizeof(list_t));
+	if (newNode == NULL)
+	{
+		return (NULL);
+	}
+	newNode->str = strdup(str);
+	if (newNode->str == NULL)
+	{
+		free(newNode);
+		return (NULL);
+	}
+	newNode->len = 0;
+	while (str[newNode->len])
+	{
+		newNode->len++;
+	}
+	newNode->next = *head;
+	*head = newNode;
+	return (newNode);
 }
